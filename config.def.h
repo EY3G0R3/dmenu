@@ -8,8 +8,13 @@ static const char *fonts[] = {
 };
 static const char *prompt      = NULL;      /* -p  option; prompt to the left of input field */
 static const char *colors[SchemeLast][2] = {
-	/*     fg         bg       */
-	[SchemeNorm] = { "#bbbbbb", "#222222" },
+// igorg: gruvbox scheme
+// igorg: TODO: should we read these from ~/.Xresources or always pass from dwm?
+	/*                fg         bg       */
+	[SchemeNorm] = { "#928374", "#282828" },
+// igorg: option 1: invert the gruvbox fg/bg
+  //[SchemeSel] = { "#282828", "#928374" },
+// igorg: option 2: use cyan background and light foreground
 	[SchemeSel] = { "#eeeeee", "#005577" },
 	[SchemeOut] = { "#000000", "#00ffff" },
 };
