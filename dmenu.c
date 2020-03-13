@@ -53,7 +53,9 @@ static XIC xic;
 static Drw *drw;
 static Clr *scheme[SchemeLast];
 
-#include "config.h"
+/* igorg: use config.def.h instead of config.h because config.h is not source controlled */
+/* igorg: and patches target config.def.h anyway */
+#include "config.def.h"
 
 static int (*fstrncmp)(const char *, const char *, size_t) = strncmp;
 static char *(*fstrstr)(const char *, const char *) = strstr;
